@@ -2,7 +2,9 @@
 
 <div class="all-grid">
     <div class="left-side">
-        <p class="title">請貼上在全校課程查詢系統複製的資料</p><br><br>
+        <p class="title">請貼上在
+            <a href="https://qrysub.nccu.edu.tw/">全校課程查詢系統</a>
+            複製的資料</p><br><br>
         <textarea class="text-div" v-model="rawInfo" placeholder="從編號開始複製即可" ></textarea><br>
         <!-- <textarea class="text-div" v-model="rawInfo">hello</textarea><br> -->
         
