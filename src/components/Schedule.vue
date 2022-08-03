@@ -145,7 +145,7 @@ function courseIntro(course){
     let gop = csNum.substring( 6, 8 );
     let s = csNum.substring( 8 );
 
-    let url = `https://newdoc.nccu.edu.tw/teaschm/1102/schmPrv.jsp-yy=111&smt=1&num=${num}&gop=${gop}&s=${s}.html`;
+    let url = `https://newdoc.nccu.edu.tw/teaschm/1111/schmPrv.jsp-yy=111&smt=1&num=${num}&gop=${gop}&s=${s}.html`;
     
     window.open(url);
 }
