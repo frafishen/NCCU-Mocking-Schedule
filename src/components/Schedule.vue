@@ -133,7 +133,7 @@ function mockSchedule(){
         }
         
         let i = course.getDay() ;
-        for(let j = course.getTime() - 1; j < course.getTime() - 1 + course.getCredit(); ++j){
+        for(let j = course.getTime(); j < course.getTime() + course.getCredit(); ++j){
             this.schedule[i][j] = course;
         }
     }
