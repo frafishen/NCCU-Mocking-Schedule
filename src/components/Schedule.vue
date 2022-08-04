@@ -220,16 +220,18 @@ body{
     font-family: Arial;
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     color:white;
+    margin-left: 100px;
 }
 
 #title-4{
     font-family: Arial;
     font-size: 40px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     color:white;
+    margin-left: 100px;
 }
 
 .text-div{
