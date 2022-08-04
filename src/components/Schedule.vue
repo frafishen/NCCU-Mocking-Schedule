@@ -33,7 +33,9 @@
         <input class="button-1" type ="button" @click="mockSchedule()" v-if="view === 1 | view === 2" value="模擬課表"/>
     </div>
 </div>
-
+<br><br><br><br><br><br><br>
+    <p id="title-2" v-if="view === 2">111 學年度 第 1 學期 模擬課表</p>
+    <p id="title-3" v-if="view === 2">* 點下課程按鈕會被導入更加詳細的課程大綱 *</p>
     <div class="schedule-grid" v-if="view === 2">
         <div v-for="(row, rowIndex) in schedule" :key="rowIndex">
             <div v-for="(col, colIndex) in row" :key="colIndex">
@@ -43,7 +45,6 @@
             </div>
         </div>
     </div>
-    <p id="title-3" v-if="view === 2">* 點下課程按鈕會被導入更加詳細的課程大綱</p>
 </template>
 
 
@@ -189,7 +190,7 @@ body{
 .schedule-grid{
     display:grid;
     grid-template-columns: repeat(6, 1fr);
-    position: relative;
+    position: absolute;
     padding: 100px 100px;
 }
 
@@ -219,7 +220,7 @@ body{
     font-family: Arial;
     font-size: 20px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     color:white;
 }
 
