@@ -34,7 +34,7 @@
     </div>
 </div>
 <br><br><br><br><br><br><br>
-    <p id="title-2" v-if="view === 2">111 學年度 第 1 學期 模擬課表</p>
+    <p id="title-4" v-if="view === 2">111 學年度 第 1 學期 模擬課表</p>
     <p id="title-3" v-if="view === 2">* 點下課程按鈕會被導入更加詳細的課程大綱 *</p>
     <div class="schedule-grid" v-if="view === 2">
         <div v-for="(row, rowIndex) in schedule" :key="rowIndex">
@@ -219,6 +219,14 @@ body{
 #title-3{
     font-family: Arial;
     font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+}
+
+#title-4{
+    font-family: Arial;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
     color:white;
